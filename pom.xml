@@ -15,6 +15,15 @@
         <junit.platform.version>1.0.0-M3</junit.platform.version>
     </properties>
 
+    <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>corp1</id>
+      <name>junit5-example</name>
+      <url>https://github.com/Yaming99/junit5-example.git</url>
+      <layout>default</layout>
+    </repository>
+
     <build>
         <plugins>
             <plugin>
@@ -53,13 +62,4 @@
         </dependency>
 
     </dependencies>
-
-    <distributionManagement>
-        <repository>
-            <id>internal.repo</id>
-            <name>junit5-example</name>
-            <url>https://github.com/Yaming99/junit5-example.git</url>
-        </repository>
-    </distributionManagement>
-
 </project>
